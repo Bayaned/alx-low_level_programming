@@ -1,8 +1,9 @@
-#include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
 /**
- * main - Prints all single digit numbers of base 10 starting from 0
- * Return: 0 (Success)
+ * main - entry point
+ *
+ * Return: alway returns 0
+ *
  */
 int main(void)
 {
@@ -11,5 +12,5 @@ int main(void)
 	for (; a < 10 ; a++)
 		printf("%d", a);
 	putchar('\n');
-return (0);
-}
+	return (0);
+}}
