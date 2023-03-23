@@ -1,174 +1,79 @@
-#include "main.h"
-#include <stdio.h>
+#include "main.h"_
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _putchar - writes the character c to std
+ * @c: parameter to compare
+ * Return: 1 or 0
  */
-int main(void)
-{
-    print_alphabet();
-    return (0);
-}
+int _putchar(char c);
 /**
- * main - check the code.
+ * print_alphabet - function to print alphabet
  *
- * Return: Always 0.
  */
-int main(void)
-{
-    print_alphabet_x10();
-    return (0);
-}
+void print_alphabet(void);
 /**
- * main - check the code.
+ * print_alphabet_x10 - prints alphabet 10 times
  *
- * Return: Always 0.
  */
-int main(void)
-{
-    int r;
-
-    r = _islower('H');
-    _putchar(r + '0');
-    r = _islower('o');
-    _putchar(r + '0');
-    r = _islower(108);
-    _putchar(r + '0');
-    _putchar('\n');
-    return (0);
-}
+void print_alphabet_x10(void);
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * _islower - prints if c is lower case
+ * @c: character to use
+ * Return: 1 or 0
  */
-int main(void)
-{
-    int r;
-
-    r = _isalpha('H');
-    _putchar(r + '0');
-    r = _isalpha('o');
-    _putchar(r + '0');
-    r = _isalpha(108);
-    _putchar(r + '0');
-    r = _isalpha(';');
-    _putchar(r + '0');
-    _putchar('\n');
-    return (0);
-}
+int _islower(int c);
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * _isalpha - prints if character is alphabet
+ * @c: character to use
+ * Return: 1 or 0
  */
-int main(void)
-{
-    int r;
-
-    r = print_sign(98);
-    _putchar(',');
-    _putchar(' ');
-    _putchar(r + '0');
-    _putchar('\n');
-    r = print_sign(0);
-    _putchar(',');
-    _putchar(' ');
-    _putchar(r + '0');
-    _putchar('\n');
-    r = print_sign(0xff);
-    _putchar(',');
-    _putchar(' ');
-    _putchar(r + '0');
-    _putchar('\n');
-    r = print_sign(-1);
-    _putchar(',');
-    _putchar(' ');
-    _putchar(r + '0');
-    _putchar('\n');
-    return (0);
-}
+int _isalpha(int c);
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_sign - prints a sign based on n
+ * @n: integer to input
+ * Return: 1 or 0  or -1
  */
-int main(void)
-{
-    int r;
-
-    r = _abs(-1);
-    printf("%d\n", r);
-    r = _abs(0);
-    printf("%d\n", r);
-    r = _abs(1);
-    printf("%d\n", r);
-    r = _abs(-98);
-    printf("%d\n", r);
-    return (0);
-}
+int print_sign(int n);
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _abs - gives absolute value
+ * @int: integer
+ * Return: integer or abs value of int
  */
-int main(void)
-{
-    int r;
-
-    print_last_digit(98);
-    print_last_digit(0);
-    r = print_last_digit(-1024);
-    _putchar('0' + r);
-    _putchar('\n');
-    return (0);
-}
+int _abs(int);
 /**
- * main - check the code
+ * print_last_last - prints digit last
  *
- * Return: Always 0.
+ * @int: integer to input
+ * Return: last digit of integer
  */
-int main(void)
-{
-    jack_bauer();
-    return (0);
-}
+int print_last_digit(int);
 /**
- * main - check the code
+ * jack_bauer - jack bauer gooo
  *
- * Return: Always 0.
  */
-int main(void)
-{
-    times_table();
-    return (0);
-}
+void jack_bauer(void);
 /**
- * main - check the code
+ * times_table - times this up
  *
- * Return: Always 0.
+ *
  */
-int main(void)
-{
-    int n;
-
-    n = add(89, 9);
-    printf("%d\n", n);
-    return (0);
-}
+void times_table(void);
 /**
- * main - check the code
+ * add - adds stuff up
  *
- * Return: Always 0.
+ * @int: integers to add
+ * Return: returns a sum
  */
-int main(void)
-{
-    print_to_98(0);
-    print_to_98(98);
-    print_to_98(111);
-    print_to_98(81);
-    print_to_98(-10);
-    return (0);
-}
-
+int add(int, int);
+/**
+ * print_to_98 - prints to 98
+ * @n: integer to start at
+ *
+ */
+void print_to_98(int n);
+/**
+ * print_times_table - whatever man
+ *@n: integer to put in this table
+ *
+ */
+void print_times_table(int n);
+#endif
