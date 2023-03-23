@@ -3,7 +3,7 @@
  * print_alphabet - Program for task
  * Return: 0 (Success)
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 char v;
 for
