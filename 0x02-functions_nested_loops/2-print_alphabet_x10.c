@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include "main.h"
 /**
  * print_alphabet_x10 - Program for task
  * Return: 0 (Success)
@@ -17,5 +17,4 @@ _putchar(v);
 }
 _putchar(i);
 }
-return (0);
 }
