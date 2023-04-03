@@ -18,12 +18,6 @@ for (int j = 5; j < 1024; j += 5)
 sum5 = sum5 + j;
 }
 int sum = sum3 + sum5;
-_putchar('0' + (sum / 100000));
-_putchar('0' + ((sum / 10000) % 10));
-_putchar('0' + ((sum / 1000) % 10));
-_putchar('0' + ((sum / 100) % 10));
-_putchar('0' + ((sum / 10) % 10));
-_putchar('0' + (sum % 10);
-_putchar('\n');
+printf("%d\n", sum);
 return (0);
 }
