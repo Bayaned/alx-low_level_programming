@@ -5,10 +5,8 @@
 */
 int main(void)
 {
-int i;
-int j;
 int sum3 = 0;
-int sum5 = 0;
+int sum3 = 0;
 for (int i = 3; i < 1024; i += 3)
 {
 sum3 = sum3 + i;
