@@ -9,18 +9,17 @@ int main(void)
 long int a = 1;
 long int b = 2;
 long int c;
-int i = 0;
-printf("%ld\n", b);
-while (i < 48)
+long int sum = 0;
+while (c < 4000000)
 {
 c = a + b;
 a = b;
 b = c;
-i++;
-if (i < 48  && (c % 2) == 0)
+if ((c % 2) == 0)
 {
-printf("%ld\n", c);
+sum = sum + c;
 }
 }
+printf("%ld\n", sum);
 return (0);
 }
