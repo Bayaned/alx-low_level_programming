@@ -14,7 +14,7 @@ int main(void)
 	printf("%d, ", a);
 	printf("%d, ", b);
 
-	while (i < 48)
+	while (i < 50)
 	{
 		c = a + b;
 		printf("%d, ", c);
