@@ -9,17 +9,19 @@ int main(void)
 	int a = 1;
 	int b = 2;
 	int c;
+	int i = 0;
 
 	printf("%d, ", a);
 	printf("%d, ", b);
 
-	for (int i = 0; i < 48; i++)
+	while (i < 48)
 	{
 		c = a + b;
 		printf("%d, ", c);
 
 		a = b;
 		b = c;
+		i++;
 
 	}
 	return (0);
