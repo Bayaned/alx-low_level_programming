@@ -2,7 +2,7 @@
 /**
  * main - 50 Fibonacci numbers
  *
- * Return: Always 0
+ * Return:nothing
  */
 int main(void)
 {
@@ -17,11 +17,15 @@ int main(void)
 	while (i < 48)
 	{
 		c = a + b;
-		printf("%ld, ", c);
+		printf("%ld", c);
 
 		a = b;
 		b = c;
 		i++;
+		if (i < 48)
+		{
+			printf(", ");
+		}
 
 	}
 	printf("\n");
