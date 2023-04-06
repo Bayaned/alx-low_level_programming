@@ -6,23 +6,24 @@
  */
 int main(void)
 {
-	int a = 1;
-	int b = 2;
-	int c;
+	long int a = 1;
+	long int b = 2;
+	long int c;
 	int i = 0;
 
-	printf("%d, ", a);
-	printf("%d, ", b);
+	printf("%ld, ", a);
+	printf("%ld, ", b);
 
-	while (i < 50)
+	while (i < 48)
 	{
 		c = a + b;
-		printf("%d, ", c);
+		printf("%ld, ", c);
 
 		a = b;
 		b = c;
 		i++;
 
 	}
+	printf("\n");
 	return (0);
 }
