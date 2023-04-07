@@ -8,16 +8,16 @@ int main(void)
 {
 	int counter = 2;
 
-	unsigned long int a = 1;
-	unsigned long int b = a + 1;
-	unsigned long int c = a + b;
+	unsigned long long int a = 1;
+	unsigned long long int b = a + 1;
+	unsigned long long int c = a + b;
 
-	printf("%lu, ", a);
-	printf("%lu, ", b);
+	printf("%llu, ", a);
+	printf("%llu, ", b);
 	while (counter < 98)
 	{
 		counter++;
-		printf("%lu", c);
+		printf("%llu", c);
 		a = b;
 		b = c;
 		c = a + b;
