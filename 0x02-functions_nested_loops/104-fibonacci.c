@@ -6,23 +6,23 @@
 */
 int main(void)
 {
-	long int a = 1;
-	long int b = 2;
-	long int c;
+	unsigned long int a = 1;
+	unsigned long int b = 2;
+	unsigned long int c;
 	int i = 0;
 
-	printf("%ld, ", a);
-	printf("%ld, ", b);
+	printf("%lu, ", a);
+	printf("%lu, ", b);
 
-	while (i < 96)
+	while (i < 98)
 	{
 		c = a + b;
-		printf("%ld", c);
+		printf("%lu", c);
 
 		a = b;
 		b = c;
 		i++;
-		if (i < 96)
+		if (i < 98)
 		{
 			printf(", ");
 		}
