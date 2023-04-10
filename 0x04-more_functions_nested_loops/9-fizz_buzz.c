@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - fizz buzz
- * Return: 0
+ * Return: a number
  */
 int main(void)
 {
@@ -21,7 +21,7 @@ int main(void)
 		{
 			printf("%d", i);
 		}
-		if ( i != 100)
+		if (i != 100)
 		{
 			printf(" ");
 		}
